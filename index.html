@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Neon Midnight: Vaporwave Run</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Varela+Round&display=swap');
+      
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #050510;
+        font-family: 'Varela Round', sans-serif;
+      }
+      
+      /* Retro Scanline Effect */
+      .scanlines {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.2) 50%,
+          rgba(0,0,0,0.2)
+        );
+        background-size: 100% 4px;
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+      }
+      
+      .retro-text {
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 2px 2px 0px #ff00ff, -2px -2px 0px #00f0ff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <div class="scanlines"></div>
+  </body>
+</html>
